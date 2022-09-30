@@ -4,7 +4,7 @@ require_once "my-functions.php";
 global $products;
 
 if (!isset($_POST['qty'])) {
-    header('Location: main.php');
+    header('Location: index.php');
 }
 
 $deliveryboy = "LA poste";

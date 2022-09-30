@@ -2,7 +2,7 @@
 require_once "navbar.php";
 require_once "my-functions.php";
 require 'database.php';
-include "class/item.php";
+include "item.php";
 $conn = connection();
 $sql = selectAllProducts($conn);
 //$sql = productsNoDiscount($conn);
