@@ -23,11 +23,11 @@ global $products;
                 <h5 class="card-title">Product Name : <?= $value["name"] ?></h5>
                 <p class="card-text">Product Price with tax :<?php formatPrice($value['price']) ?></p>
                 <p class="card-text">Product Price without tax :<?php formatPrice(priceExcludingVAT($value['price'])) ?></p>
-                <?php if ($value["discount"] == null) {
-                    echo "<h5 class='text-danger ' >wait for sale</h5>";
-                } else { ?>
-                    <p> Discount : <?php formatPrice(discountedPrice($value['price'], $value["discount"])) ?></p>
-                <?php } ?>
+<!--                --><?php //if ($value["discount"] == null) {
+//                    echo "<h5 class='text-danger ' >wait for sale</h5>";
+//                } else { ?>
+<!--                    <p> Discount : --><?php //formatPrice(discountedPrice($value['price'], $value["discount"])) ?><!--</p>-->
+<!--                --><?php //} ?>
 
                 <form action="checkout.php" method="POST">
                     <label for="quantity">Quantity :</label>
